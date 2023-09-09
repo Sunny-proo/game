@@ -105,11 +105,11 @@ const prj=[];
 }}
 
 function spawnEnemies(){
-    
+    alert("hi")
     setInterval(()=>{
         const r=Math.random()*30+10
-        const x=Math.floor(Math.random()*canvas.width/2);
-    const y=1000
+        const x=100
+    const y=100
  
     let color="rgb(x,y,r)"
     const angle=Math.atan2(canvas.height/2-y,canvas.width/2-x);
@@ -118,6 +118,8 @@ function spawnEnemies(){
         lx:Math.cos(angle),
         ly:Math.sin(angle)
      }
+        x+=50;
+        y+=50;
         Enemies.push(new Enemy(x,y,r,color,speed.lx*5,speed.ly*5))
     },1000)
 }
