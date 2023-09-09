@@ -105,11 +105,11 @@ const prj=[];
 }}
 
 function spawnEnemies(){
-    alert("hi")
+    alert("hello")
     setInterval(()=>{
         const r=Math.random()*30+10
-        const x=100
-    const y=100
+        var x=100
+    var y=100
  
     let color="rgb(x,y,r)"
     const angle=Math.atan2(canvas.height/2-y,canvas.width/2-x);
